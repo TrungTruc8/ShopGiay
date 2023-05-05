@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewData["Title"] = "Thông tin liên hệ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Begin Main Content Area -->
+<main class="main-content">
+    
+
+    <!-- Begin Shipping Area -->
+    <div class="shipping-area section-space-y-axis-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="shipping-item">
+                        <div class="shipping-img">
+                            <img src="~/assets/images/shipping/icon/plane.png" alt="Shipping Icon">
+                        </div>
+                        <div class="shipping-content">
+                            <h5 class="title">Dịch vụ giao hàng</h5>
+                            <p class="short-desc mb-0">Giao hàng cẩn thận, nhanh chóng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-6 pt-md-0">
+                    <div class="shipping-item">
+                        <div class="shipping-img">
+                            <img src="~/assets/images/shipping/icon/earphones.png" alt="Shipping Icon">
+                        </div>
+                        <div class="shipping-content">
+                            <h5 class="title">Hỗ trợ trực tuyến</h5>
+                            <p class="short-desc mb-0">Hỗ trợ trực tuyến 24/7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-6 pt-lg-0">
+                    <div class="shipping-item">
+                        <div class="shipping-img">
+                            <img src="~/assets/images/shipping/icon/shield.png" alt="Shipping Icon">
+                        </div>
+                        <div class="shipping-content">
+                            <h5 class="title">Thanh toán an toàn</h5>
+                            <p class="short-desc mb-0">Hệ thống thanh toán da dạng, an toàn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shipping Area End Here -->
+
+    <div class="contact-with-map">
+        <div class="contact-map">
+            <iframe class="contact-map-size" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4641633183764!2d106.78380301526059!3d10.852257460755817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175276cf9bacd1f%3A0xc76a922da15843fc!2zNjIgxJAuIFTDom4gSMOyYSAyLCBQaMaw4budbmcgVMOibiBQaMO6LCBRdeG6rW4gOSwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1666820246580!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
+            @*Thành phố Hồ Chí Minh --- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501726.46044518973!2d106.41503774630306!3d10.754666402364307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2zSOG7kyBDaMOtIE1pbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1666823521301!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>*@
+        </div>
+        <div class="contact-form-area section-space-bottom-100">
+            <div class="container">
+                <div class="contact-form-wrap">
+                    <form id="contact-form" class="contact-form" action="https://whizthemes.com/mail-php/mamunur/harmic/harmic.php">
+                        <h4 class="contact-form-title pb-2 mb-7">Gửi tin nhắn đến chúng tôi</h4>
+                        <div class="form-field">
+                            <input type="text" name="con_name" placeholder="Tên*" class="input-field">
+                        </div>
+                        <div class="form-field mt-6">
+                            <input type="text" name="con_email" placeholder="Email*" class="input-field">
+                        </div>
+                        <div class="form-field mt-6">
+                            <textarea name="con_message" placeholder="Lời nhắn" class="textarea-field"></textarea>
+                        </div>
+                        <div class="button-wrap mt-8">
+                            <button type="submit" value="submit" class="btn btn btn-custom-size lg-size btn-primary btn-secondary-hover rounded-0" name="submit">Gửi tin nhắn</button>
+                        </div>
+                        <p class="form-messege mt-3 mb-0"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- Main Content Area End Here -->
